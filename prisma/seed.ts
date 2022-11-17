@@ -76,7 +76,7 @@ async function seed() {
       `.trim(),
     },
   ];
-  
+
   for (const post of posts) {
     await prisma.post.upsert({
       where: { slug: post.slug },
